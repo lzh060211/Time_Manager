@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class HomeListView extends StatefulWidget {
+class StarListView extends StatefulWidget {
   @override
-  _HomeListViewState createState() => _HomeListViewState();
+  _StarListViewState createState() => _StarListViewState();
 }
 
-class _HomeListViewState extends State<HomeListView> {
+class _StarListViewState extends State<StarListView> {
   // members
   final double titleFontSize = 16;
   final double subtitleFontSize = 12;
 
+  // functions
   @override
   Widget build(BuildContext context) {
     return ListView.builder(

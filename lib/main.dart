@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:time_manager/screens/settings/settings.dart';
 import './screens/home_page/home_page.dart';
 import './screens/statistics/statistics.dart';
 
@@ -17,11 +18,8 @@ class App extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/HomePage': (context) => HomePage(),
         '/Statistics': (context) => Statistics(),
+        '/Settings': (context) => Settings(),
       },
     );
   }
 }
-
-
-
-

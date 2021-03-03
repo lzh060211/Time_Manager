@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import '../menu.dart';
 import 'home_quick_start.dart';
 import 'home_toggle_buttons.dart';
-import 'home_list_view.dart';
+import 'star_list_view.dart';
+import 'today_list_view.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,8 +11,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // functions
   @override
   Widget build(BuildContext context) {
+    // FIXME: 切換畫面function待修
+    Widget switchList() {
+      if (selections[0])
+        return StarListView();
+      else
+        return TodayListView();
+    }
+
     return Scaffold(
       resizeToAvoidBottomPadding: false, // 防止鍵盤升起改變布局
       appBar: AppBar(
@@ -31,7 +41,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               width: 350,
               height: 200,
-              child: HomeListView(),
+              child: switchList(),
             ),
           ],
         ),

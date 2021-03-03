@@ -43,8 +43,8 @@ class Menu extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('設定'),
-            selected: selected('/Statistics'),
-            onTap: () => tap('/Statistics'),
+            selected: selected('/Settings'),
+            onTap: () => tap('/Settings'),
           )
         ],
       ),
