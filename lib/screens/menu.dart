@@ -27,7 +27,7 @@ class Menu extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          DrawerHeader(),
+          //DrawerHeader(),
           ListTile(
             leading: Icon(Icons.home),
             title: Text('Quick Start'),

@@ -32,7 +32,7 @@ class _HomeQuickStartState extends State<HomeQuickStart> {
             height: 150,
             child: FloatingActionButton(
               child: Icon(
-                Icons.play_arrow_outlined,
+                Icons.error_outline,
                 size: 150,
               ),
               onPressed: null, // 檢查事項名稱是否在9個中文以內，或是跟已存在的重複

@@ -17,7 +17,7 @@ class _StarListViewState extends State<StarListView> {
       itemCount: 5,
       itemBuilder: (BuildContext context, int index) {
         return ListTile(
-          leading: Icon(Icons.circle),
+          leading: Icon(Icons.error_outline),
           title: Text('讀書', style: TextStyle(fontSize: titleFontSize)),
           subtitle: Text('預計花費 02:00:00', style: TextStyle(fontSize: subtitleFontSize)),
           dense: true,
